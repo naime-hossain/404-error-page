@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>car</title>
+  <!--google fonts-->
+		<meta name="viewpoint" content="width=device-width, initial-scale=1,0"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <!--style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"/>
+	
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/404.css">
+  <link rel="stylesheet" href="css/vegas.css">
+  
+  
+</head>
+
+<body class='vegas-container'>
+
+<div class="main-wrap">
+  <div class="overlay"></div>
+ 
+   <div class="header">
+      <div class="container ">
+         <div class="row">
+          <div class="col-lg-6">
+               <div class="timer">
+                     <img src="images/CarWrapSolutionsCharacter.png">
+
+                  </div>
+
+
+          </div>
+          <div class="col-lg-6">
+             <!--start first section-->
+
+          <div class="uper-img">
+              
+
+             <div class="col-lg-12 upper-mid">
+            <img src="images/logo.png">
+
+           </div>
+          
+
+          </div>
+          <!--end first section-->
+          <div class="col-lg-12 logo">
+              
+
+              <span><img src="images/signal.png"/>
+
+                Oops! no car found!
+              </span>
+              <h2>the boy will attack you within:</h2>
+
+
+          </div>
+          <div class="col-lg-12 yapp">
+                <div class="col-lg-12 timer-mid">
+                    <div class="timeset"></div>
+
+                </div>
+                <div class="col-lg-12">
+                  <div class="buttom">
+                  <div class="seach_bar">
+               <h2>you stay ,you hurt</h2>
+                <p>go  <span><a href="#">home</a></span> be safe </p>
+         
+          
+              </div>
+              </div>
+      
+                </div>
+
+
+           </div>
+
+
+          </div>
+         
+
+          <!--start second section-->
+        
+          
+           
+            </div><!--end second section-->
+         
+
+
+         </div><!--end row section-->
+
+      </div><!--end container section-->
+
+
+   </div><!--end header section-->
+
+
+
+
+
+   
+
+
+
+<script src="js/jquery-2.1.1.min.js" ></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" ></script>
+
+<script src="js/jquery.nicescroll.min.js"></script>
+
+<script src="js/vegas.js"></script>
+<script src="js/jquery.countdownTimer.min.js"></script>
+
+<script type="text/javascript">
+
+
+  /* Background Slider */
+  $(function() {
+$('body').vegas({
+  slides: [
+    { src: 'images/car1.jpg',fade:1000 },
+    { src: 'images/car2.jpg',fade:1000 },
+    { src: 'images/car3.jpg',fade:1000 },
+    
+  ]
+});
+});
+
+$(".timeset").countdowntimer({
+            minutes : 0, /* Set minutes */
+            seconds : 20, /* Set seconds */
+            size : "lg",
+            tickInterval : 1,
+            timeSeparator : ":",
+            timeUp : function() {
+              $(".timeset").html('<span class="opps">go <br />home!!</span>');
+              $('.timer img').addClass('animated infinite  pulse');
+              $('.upper-mid img').addClass('animated infinite  shake');
+              $('.timeset span').addClass('animated infinite  bounce');
+              $('.').addClass('animated infinite  shake');
+            }
+    });
+
+$(document).ready(
+    function() {  
+      $("html").niceScroll({
+    cursorcolor:"#00F"
+    });
+  });
+</script>
+   
+</body>
+</html>
