@@ -169,10 +169,13 @@ span.opps {
     font-size: 21px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 765px){
 
 body {
     padding-right: 0px;
     padding-left: 0px;
+}
+.timer img{
+    display: none;
 }
 }
